@@ -40,4 +40,7 @@ print('\n')
 
 # 6
 first_names = data['Name'].apply(lambda x : pd.Series(x.split(' ')))
-first_names[0].value_counts()
+names = first_names[0].value_counts()
+print('Question 6:')
+print(names)
+print('\n')
